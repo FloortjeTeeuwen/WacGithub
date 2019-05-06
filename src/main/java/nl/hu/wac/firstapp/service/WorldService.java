@@ -1,4 +1,6 @@
-package nl.hu.wac.firstapp.servlets.les3;
+package nl.hu.wac.firstapp.service;
+
+import nl.hu.wac.firstapp.domain.Country;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,12 +1,15 @@
 package nl.hu.wac.firstapp.servlets.les3;
 
 
+import nl.hu.wac.firstapp.domain.Country;
+import nl.hu.wac.firstapp.service.ServiceProvider;
+import nl.hu.wac.firstapp.service.WorldService;
+
 import javax.json.*;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import java.util.List;
 
 @Path("/countries")
 public class WorldResource {

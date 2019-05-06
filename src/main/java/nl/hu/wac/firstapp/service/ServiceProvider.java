@@ -1,4 +1,4 @@
-package nl.hu.wac.firstapp.servlets.les3;
+package nl.hu.wac.firstapp.service;
 
 public class ServiceProvider {
 	private static WorldService worldService = new WorldService();

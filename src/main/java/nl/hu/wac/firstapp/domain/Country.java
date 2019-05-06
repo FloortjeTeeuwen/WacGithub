@@ -1,4 +1,4 @@
-package nl.hu.wac.firstapp.servlets.les3;
+package nl.hu.wac.firstapp.domain;
 
 public class Country {
 	private String code;
