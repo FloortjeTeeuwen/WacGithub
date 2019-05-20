@@ -20,7 +20,7 @@ public class WorldResource {
        JsonArrayBuilder jsonCountriesBuilder = Json.createArrayBuilder();
 
        for(Country c : service.getAllCountries()){
-           JsonObject jsonCountry = buildJsonCountryFrom(c);
+           JsonObjectBuilder jsonCountry = convertCountry(c);
 
            jsonCountriesBuilder.add(jsonCountry);
         }
@@ -30,15 +30,6 @@ public class WorldResource {
     }
 
 
-    private JsonObject buildJsonCountryFrom(Country country) {
-        JsonObjectBuilder countryBuilder = Json.createObjectBuilder();
-
-        countryBuilder.add("country", country.getName());
-        countryBuilder.add("code", country.getCode());
-
-        return countryBuilder.build();
-    }
-
     @GET
     @Path("{code}")
     @Produces ("application/json")
@@ -46,18 +37,7 @@ public class WorldResource {
         WorldService service = ServiceProvider.getWorldService();
         Country country = service.getCountryByCode(code);
 
-        JsonObjectBuilder countryBuilder = Json.createObjectBuilder();
-        countryBuilder.add("code", country.getCode());
-        countryBuilder.add("name", country.getName());
-        countryBuilder.add("Capital", country.getCapital());
-        countryBuilder.add("Surface", country.getSurface());
-        countryBuilder.add("Goverment", country.getGovernment());
-        countryBuilder.add("Iso3", country.getIso3());
-        countryBuilder.add("continent", country.getContinent());
-        countryBuilder.add("region", country.getRegion());
-        countryBuilder.add("population", country.getPopulation());
-        countryBuilder.add("lat", country.getLatitude());
-        countryBuilder.add("lng", country.getLongitude());
+JsonObjectBuilder countryBuilder=convertCountry(country);
 
         return countryBuilder.build().toString();
     }
@@ -69,7 +49,7 @@ public class WorldResource {
         JsonArrayBuilder jsonCountriesBuilder = Json.createArrayBuilder();
 
         for(Country c : service.get10LargestSurfaces()){
-            JsonObject jsonCountry = buildJsonCountryFrom(c);
+            JsonObjectBuilder jsonCountry = convertCountry(c);
 
             jsonCountriesBuilder.add(jsonCountry);
         }
@@ -96,7 +76,7 @@ public class WorldResource {
         JsonArrayBuilder jsonCountriesBuilder = Json.createArrayBuilder();
 
         for(Country c : service.get10LargestPopulations()){
-            JsonObject jsonCountry = buildJsonCountryFrom(c);
+            JsonObjectBuilder jsonCountry = convertCountry(c);
 
             jsonCountriesBuilder.add(jsonCountry);
         }
@@ -106,13 +86,21 @@ public class WorldResource {
     }
 
 
-    private JsonObject buildJsonCountryFrom2(Country country) {
+    private JsonObjectBuilder convertCountry(Country country) {
         JsonObjectBuilder countryBuilder = Json.createObjectBuilder();
-
-        countryBuilder.add("country", country.getName());
         countryBuilder.add("code", country.getCode());
+        countryBuilder.add("name", country.getName());
+        countryBuilder.add("capital", country.getCapital());
+        countryBuilder.add("surface", country.getSurface());
+        countryBuilder.add("goverment", country.getGovernment());
+        countryBuilder.add("iso3", country.getIso3());
+        countryBuilder.add("continent", country.getContinent());
+        countryBuilder.add("region", country.getRegion());
+        countryBuilder.add("population", country.getPopulation());
+        countryBuilder.add("lat", country.getLatitude());
+        countryBuilder.add("lng", country.getLongitude());
 
-        return countryBuilder.build();
+        return countryBuilder;
 
 
 }

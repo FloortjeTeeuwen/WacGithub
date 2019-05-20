@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" type="text/css" href="IP-APICSS.css">
+    <title>IP-API</title>
+</head>
+<body>
+    <div id="frame">
+        <div id="myLocation">
+            <h1 id="locatie">Mijn locatie</h1>
+            <p>Landcode: <span id="country"></span>
+               Land: <span id="country_name"></span>
+                Regio: <span id="region"> </span>
+                Stad: <span id="city"></span>
+                Postcode: <span id="postal"></span>
+                Latitude: <span id="latitude"></span>
+                Longitude: <span id="longitude"></span>
+                IP: <span id="ip"></span>
+            </p>
+        </div>
+        <div id="weatherInfo">
+            <h2 id="Weather">Het weer in </h2>
+            <p>Tempratuur: <span id="temp"></span>
+                Luchtvochtigheid: <span id="humidity"></span>
+                Windsnelheid: <span id="speed"></span>
+                Windrichting: <span id="gust"></span>
+                Zonsopgang: <span id="sunrise"></span>
+                Zonsondergang: <span id="sunset"></span>
+            </p>
+        </div>
+
+        <div id="countryList">
+            <h3>Beschikbare vakantiebestemmingen</h3>
+            <table>
+                <thead>
+                    <th>Land</th>
+                    <th>Hoofdstad</th>
+                    <th>Regio</th>
+                    <th>Oppervlakte</th>
+                    <th>Inwoners</th>
+                </thead>
+                <tbody id="countries">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+<!-- Hier komen jouw script-tags -->
+<script src="IP-APIJS.js"></script>
+
+</body>
+</html>

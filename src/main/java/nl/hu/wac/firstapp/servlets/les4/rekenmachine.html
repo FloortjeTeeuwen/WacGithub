@@ -1,32 +1,13 @@
 <!DOCTYPE html>
 <html>
 <title>JavaScript Rekenmachine</title>
-<style>
-    div#frame {
-        background-color:	gray;
-        margin:		1em;
-        padding:		0.5em;
-        text-align:		center;
-        width:			11em;
-    }
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
 
-    div#display {
-        background-color:	white;
-        height:		1.5em;
-        margin:		0.5em;
-        padding-right:	0.3em;
-        text-align:		right;
-    }
-
-    button {
-        height:		3.5em;
-        margin-bottom:	0.3em;
-        width:			3.5em;
-    }
-</style>
+</head>
 <body>
 <div id="frame">
-    <div id="display">0</div>
+    <input id="display" value="0" />
 
     <button id="btn_7">7</button>
     <button id="btn_8">8</button>
@@ -47,6 +28,9 @@
     <button id="btn_0">0</button>
     <button id="btn_eq">=</button>
     <button id="btn_plus">+</button>
+
 </div>
+
+<script src="javascriptmachine.js"></script>
 </body>
 </html>

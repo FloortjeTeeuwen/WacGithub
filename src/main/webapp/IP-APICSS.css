@@ -1,0 +1,62 @@
+body {
+    background-color: lightgrey;
+}
+
+h1{
+    background-color: dimgrey;
+    font-family: "Times New Roman", Times, serif ;
+    color: white;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+}
+h2{
+    background-color: dimgrey;
+    font-family: "Times New Roman", Times, serif ;
+    color: white;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+}
+h3{
+    background-color: dimgrey;
+    font-family: "Times New Roman", Times, serif ;
+    color: white;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+}
+span {
+    display: block;
+    font-weight: normal;
+}
+
+p{
+    font-weight: bold;
+    float: left;
+    clear: both;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+    background-color: #B1ADA5;
+}
+
+th{
+    table-layout: fixed;
+}
+tr:hover{
+    background-color: aqua;
+}
+
+
+
