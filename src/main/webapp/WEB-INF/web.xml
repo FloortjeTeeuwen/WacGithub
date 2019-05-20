@@ -9,7 +9,7 @@
 
     <init-param>
       <param-name>jersey.config.server.provider.packages</param-name>
-      <param-value>nl.hu.wac.firstapp.servlets.les3</param-value>
+      <param-value>nl.hu.wac.firstapp.webservices</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>

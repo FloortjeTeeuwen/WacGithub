@@ -1,4 +1,4 @@
-package nl.hu.wac.firstapp.servlets.les3;
+package nl.hu.wac.firstapp.webservices;
 
 
 import nl.hu.wac.firstapp.domain.Country;

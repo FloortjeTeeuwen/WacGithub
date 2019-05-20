@@ -1,4 +1,4 @@
-package nl.hu.wac.firstapp.servlets;
+package nl.hu.wac.firstapp.webservices;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
