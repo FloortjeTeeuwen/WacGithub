@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <link rel="stylesheet" type="text/css" href="IP-APICSS.css">
     <title>IP-API</title>
 </head>
 <body>
     <div id="frame">
-        <div id="myLocation">
-            <h1 id="locatie">Mijn locatie</h1>
+        <div id="myLocation" >
+            <h1 id="locatie" onclick="showWeather(52.09, 5.11, 'Utrecht')">Mijn locatie</h1>
             <p>Landcode: <span id="country"></span>
                Land: <span id="country_name"></span>
                 Regio: <span id="region"> </span>
@@ -18,7 +19,7 @@
                 IP: <span id="ip"></span>
             </p>
         </div>
-        <div id="weatherInfo">
+        <div  id="weatherInfo">
             <h2 id="Weather">Het weer in </h2>
             <p>Tempratuur: <span id="temp"></span>
                 Luchtvochtigheid: <span id="humidity"></span>
@@ -29,7 +30,7 @@
             </p>
         </div>
 
-        <div id="countryList">
+        <div id="vacation">
             <h3>Beschikbare vakantiebestemmingen</h3>
             <table>
                 <thead>

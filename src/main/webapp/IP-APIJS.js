@@ -69,6 +69,9 @@ function showWeather(latitude, longitude, city) {
             cityname.textContent = (`Het weer in ${city}`);
 
 
+
+
+
         })
 }
 
@@ -104,9 +107,7 @@ function loadCountries() {
 
                 countries.appendChild(table);
 
-                localStorage.setItem('naam', country.name);
-                localStorage.getItem('naam');
-                localStorage.setItem('Hoofdstad', country.capital);
+
             }});
 
 }
