@@ -38,41 +38,65 @@ function initPage() {
 }
 
 
+function saveToLS(myJson, city) {
+    console.log("saving to LS");
+    console.log(myJson);
+    const weatherdata = myJson;
+    weatherdata.timestamp = Date.now();
+    window.localStorage.setItem(city, JSON.stringify(weatherdata));
+}
+
 function showWeather(latitude, longitude, city) {
-    fetch('https://api.openweathermap.org/data/2.5/weather?lat='+latitude+'&lon='+longitude+'&appid=e42ce15cf9205e45b613fa448eb477ec')
+    var localCity = window.localStorage.getItem(city);
+    if(localCity === null || is10MinutesAgo(localCity.timestamp)) {
+        getWeatherData(latitude, longitude)
+            .then(myJson => {
+                fillWeatherDiv(myJson, city);
+                saveToLS(myJson, city);
+            });
+    } else {
+        var myJson = JSON.parse(window.localStorage.getItem(city));
+        fillWeatherDiv(myJson,city);
+    }
+}
+
+function getWeatherData(latitude,longitude){
+    return fetch('https://api.openweathermap.org/data/2.5/weather?lat='+latitude+'&lon='+longitude+'&appid=e42ce15cf9205e45b613fa448eb477ec')
         .then(function (response) {
             return response.json();
-        })
-        .then(function (myJson) {
-            console.log(myJson);
+        });
+}
 
-            const temp = document.querySelector("#temp");
-            temp.textContent = myJson.main.temp;
+function fillWeatherDiv(myJson, city){
+    console.log(myJson);
 
-            const humidity = document.querySelector("#humidity");
-            humidity.textContent = myJson.main.humidity;
+    const temp = document.querySelector("#temp");
+    temp.textContent = myJson.main.temp;
 
-            const speed = document.querySelector("#speed");
-            speed.textContent = myJson.wind.speed;
+    const humidity = document.querySelector("#humidity");
+    humidity.textContent = myJson.main.humidity;
 
-            const gust = document.querySelector("#gust");
-            gust.textContent = myJson.wind.gust;
+    const speed = document.querySelector("#speed");
+    speed.textContent = myJson.wind.speed;
 
-            const sunrise = document.querySelector("#sunrise");
-            sunrise.textContent = myJson.sys.sunrise;
+    const gust = document.querySelector("#gust");
+    gust.textContent = myJson.wind.gust;
 
-            const sunset = document.querySelector("#sunset");
-            sunset.textContent = myJson.sys.sunset;
+    const sunrise = document.querySelector("#sunrise");
+    sunrise.textContent = myJson.sys.sunrise;
 
-            const weatherInfo = document.querySelector("#weatherInfo");
-            const cityname = weatherInfo.querySelector("#Weather");
-            cityname.textContent = (`Het weer in ${city}`);
+    const sunset = document.querySelector("#sunset");
+    sunset.textContent = myJson.sys.sunset;
 
+    cityname.textContent = (`Het weer in ${city}`);
+}
 
+function is10MinutesAgo(date2) {
+    var date1 = Date.now();
+    var res = Math.abs(date1 - date2) / 1000;
+    var minutes = Math.floor(res / 60) % 60;
 
-
-
-        })
+    return minutes > 10;
 }
 
 function loadCountries() {
@@ -83,8 +107,6 @@ function loadCountries() {
         .then(function (myJson) {
 
             for(const country of myJson) {
-                console.log(myJson)
-                console.log(country.lat,country.lng,country.capital)
                 const table = document.createElement("tr")
                 table.setAttribute('onclick',"showWeather("+country.lat+", "+country.lng+", '"+country.capital+"')")
                 const table1 = document.createElement("td");
