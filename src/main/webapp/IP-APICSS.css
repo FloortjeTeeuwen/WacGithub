@@ -2,6 +2,25 @@
         background-color: lightskyblue;
     }
 
+    #myLocation {
+        grid-column-start: 1;
+        grid-column-end:2;
+    }
+
+    #weatherInfo {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    #vacation {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #frame {
+        display: grid;
+    }
+
     h1 {
         background-color: orange;
         font-family: "Times New Roman", Times, serif;
@@ -66,28 +85,30 @@
     tr:hover {
         background-color: white;
         border-spacing: 0px;
+        cursor:pointer;
     }
-@media screen and (min-width: 700px) {
-    #frame {
-        display: grid;
+    
+    #countrytable{
+        width:100%;
+        min-width: 500px;
+        overflow-x: auto;
+    }
+@media screen and (max-width: 700px) {
 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 2fr 10fr 2fr;
-    }
 
     #myLocation {
-        grid-column: 1;
-        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end:2;
     }
 
     #weatherInfo {
-        grid-column: 2;
-        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 
     #vacation {
-        grid-column: 1/3;
-        grid-row: 3/4;
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 
 }

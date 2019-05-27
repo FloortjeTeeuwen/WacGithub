@@ -32,15 +32,13 @@ function initPage() {
 
 
             showWeather(myJson.latitude,myJson.longitude, myJson.city);
-            loadCountries();
 
         });
+    loadCountries();
 }
 
 
 function saveToLS(myJson, city) {
-    console.log("saving to LS");
-    console.log(myJson);
     const weatherdata = myJson;
     weatherdata.timestamp = Date.now();
     window.localStorage.setItem(city, JSON.stringify(weatherdata));
@@ -68,7 +66,6 @@ function getWeatherData(latitude,longitude){
 }
 
 function fillWeatherDiv(myJson, city){
-    console.log(myJson);
 
     const temp = document.querySelector("#temp");
     temp.textContent = myJson.main.temp;
@@ -88,6 +85,7 @@ function fillWeatherDiv(myJson, city){
     const sunset = document.querySelector("#sunset");
     sunset.textContent = myJson.sys.sunset;
 
+    var cityname=document.getElementById("Weather");
     cityname.textContent = (`Het weer in ${city}`);
 }
 
@@ -105,7 +103,6 @@ function loadCountries() {
             return response.json();
         })
         .then(function (myJson) {
-
             for(const country of myJson) {
                 const table = document.createElement("tr")
                 table.setAttribute('onclick',"showWeather("+country.lat+", "+country.lng+", '"+country.capital+"')")
