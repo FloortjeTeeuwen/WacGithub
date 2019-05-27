@@ -2,6 +2,8 @@ package nl.hu.wac.firstapp.webservices;
 
 
 import nl.hu.wac.firstapp.domain.Country;
+import nl.hu.wac.firstapp.domain.CountryDao;
+import nl.hu.wac.firstapp.domain.CountryPostgresDaoImpl;
 import nl.hu.wac.firstapp.service.ServiceProvider;
 import nl.hu.wac.firstapp.service.WorldService;
 
@@ -10,6 +12,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import java.util.List;
 
 @Path("/countries")
 public class WorldResource {
@@ -28,7 +31,6 @@ public class WorldResource {
        JsonArray array = jsonCountriesBuilder.build();
        return array.toString();
     }
-
 
     @GET
     @Path("{code}")

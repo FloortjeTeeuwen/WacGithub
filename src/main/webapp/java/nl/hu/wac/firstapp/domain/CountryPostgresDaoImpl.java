@@ -15,7 +15,7 @@ public class CountryPostgresDaoImpl extends PostgresBaseDao implements CountryDa
     }
     public boolean save(Country country){
         try {
-            PreparedStatement mySt = myConn.prepareStatement("insert into public.\"Country\" values (?,?,?,?,?,?,?)");
+            PreparedStatement mySt = myConn.prepareStatement("insert into country values (?,?,?,?,?,?,?)");
             mySt.setString(1, country.getCode());
             mySt.setString(2, country.getName());
             mySt.setString(3, country.getContinent());
@@ -28,178 +28,98 @@ public class CountryPostgresDaoImpl extends PostgresBaseDao implements CountryDa
         }
         catch (SQLException e){
             System.out.println("FOUT");
+            e.printStackTrace();
         }
         return false;
     }
 
     public List<Country> findAll(){
-        List<Country> countries = new ArrayList<Country>();
-        try {
-            PreparedStatement mySt = myConn.prepareStatement("select * from public.\"Country\"");
-            ResultSet RS = mySt.executeQuery();
-            Country c = null;
-            while (RS.next()) {
-                System.out.println("Landcode: " + RS.getString("code"));
-                System.out.println("Afkorting: " + RS.getString("iso3"));
-                System.out.println("Landnaam: " + RS.getString("name"));
-                System.out.println("Hoofdstad: " + RS.getString("capital"));
-                System.out.println("Contrinent: " + RS.getString("continent"));
-                System.out.println("Regio: " + RS.getString("region"));
-                System.out.println("Oppervlakte: " + RS.getDouble("surfacearea"));
-                System.out.println("Aantal inwoners: " + RS.getInt("population"));
-                System.out.println("Regering: " + RS.getString("governmentform"));
-                System.out.println("Lat: " + RS.getDouble("latitude"));
-                System.out.println("Lon: " + RS.getDouble("longitude"));
-                System.out.println("\n");
+        List<Country> countries;
 
-                c = new Country(
-                        RS.getString("code"),
-                        RS.getString("iso3"),
-                        RS.getString("name"),
-                        RS.getString("capital"),
-                        RS.getString("continent"),
-                        RS.getString("region"),
-                        RS.getDouble("surfacearea"),
-                        RS.getInt("population"),
-                        RS.getString("governmentform"),
-                        RS.getDouble("latitude"),
-                        RS.getDouble("longitude"));
-                countries.add(c);
-            }
-        }
-        catch (SQLException e){
+        try {
+            PreparedStatement mySt = myConn.prepareStatement("select * from country");
+            ResultSet resultSet = mySt.executeQuery();
+
+            countries = buildCountries(resultSet);
+        } catch (SQLException e){
+            e.printStackTrace();
             return null;
         }
+
+        return countries;
+    }
+
+    private List<Country> buildCountries(ResultSet resultSet) throws SQLException {
+        List<Country> countries = new ArrayList<Country>();
+
+        while (resultSet.next()) {
+            Country country = new Country(
+                    resultSet.getString("code"),
+                    resultSet.getString("iso3"),
+                    resultSet.getString("name"),
+                    resultSet.getString("capital"),
+                    resultSet.getString("continent"),
+                    resultSet.getString("region"),
+                    resultSet.getDouble("surfacearea"),
+                    resultSet.getInt("population"),
+                    resultSet.getString("governmentform"),
+                    resultSet.getDouble("latitude"),
+                    resultSet.getDouble("longitude"));
+            countries.add(country);
+        }
+
         return countries;
     }
 
     public List<Country> findByCode(String code){
-        List<Country> countries = new ArrayList<Country>();
+        List<Country> countries;
         try {
-            PreparedStatement mySt = myConn.prepareStatement("select * from public.\"Country\" where code=?");
+            PreparedStatement mySt = myConn.prepareStatement("select * from country where code=?");
             mySt.setString(1, code);
-            ResultSet RS = mySt.executeQuery();
-            Country c = null;
-            while (RS.next()) {
-                System.out.println("Landcode: " + RS.getString("code"));
-                System.out.println("Afkorting: " + RS.getString("iso3"));
-                System.out.println("Landnaam: " + RS.getString("name"));
-                System.out.println("Hoofdstad: " + RS.getString("capital"));
-                System.out.println("Contrinent: " + RS.getString("continent"));
-                System.out.println("Regio: " + RS.getString("region"));
-                System.out.println("Oppervlakte: " + RS.getDouble("surfacearea"));
-                System.out.println("Aantal inwoners: " + RS.getInt("population"));
-                System.out.println("Regering: " + RS.getString("governmentform"));
-                System.out.println("Lat: " + RS.getDouble("latitude"));
-                System.out.println("Lon: " + RS.getDouble("longitude"));
-                System.out.println("\n");
+            ResultSet resultSet = mySt.executeQuery();
 
-                c = new Country(
-                        RS.getString("code"),
-                        RS.getString("iso3"),
-                        RS.getString("name"),
-                        RS.getString("capital"),
-                        RS.getString("continent"),
-                        RS.getString("region"),
-                        RS.getDouble("surfacearea"),
-                        RS.getInt("population"),
-                        RS.getString("governmentform"),
-                        RS.getDouble("latitude"),
-                        RS.getDouble("longitude"));
-                countries.add(c);
-            }
-        }
-        catch (SQLException e){
+            countries = buildCountries(resultSet);
+        } catch (SQLException e){
+            e.printStackTrace();
             return null;
         }
+
         return countries;
     }
 
     public List<Country> find10LargestPopulations(){
-        List<Country> countries = new ArrayList<Country>();
+        List<Country> countries;
         try{
-            PreparedStatement mySt = myConn.prepareStatement("SELECT * FROM public.\"Country\"  ORDER BY population DESC limit 5; ");
-            ResultSet RS = mySt.executeQuery();
-            Country c = null;
-            while (RS.next()) {
-                System.out.println("Landcode: " + RS.getString("code"));
-                System.out.println("Afkorting: " + RS.getString("iso3"));
-                System.out.println("Landnaam: " + RS.getString("name"));
-                System.out.println("Hoofdstad: " + RS.getString("capital"));
-                System.out.println("Contrinent: " + RS.getString("continent"));
-                System.out.println("Regio: " + RS.getString("region"));
-                System.out.println("Oppervlakte: " + RS.getDouble("surfacearea"));
-                System.out.println("Aantal inwoners: " + RS.getInt("population"));
-                System.out.println("Regering: " + RS.getString("governmentform"));
-                System.out.println("Lat: " + RS.getDouble("latitude"));
-                System.out.println("Lon: " + RS.getDouble("longitude"));
-                System.out.println("\n");
+            PreparedStatement mySt = myConn.prepareStatement("SELECT * FROM country  ORDER BY population DESC limit 5; ");
+            ResultSet resultSet = mySt.executeQuery();
 
-                c = new Country(
-                        RS.getString("code"),
-                        RS.getString("iso3"),
-                        RS.getString("name"),
-                        RS.getString("capital"),
-                        RS.getString("continent"),
-                        RS.getString("region"),
-                        RS.getDouble("surfacearea"),
-                        RS.getInt("population"),
-                        RS.getString("governmentform"),
-                        RS.getDouble("latitude"),
-                        RS.getDouble("longitude"));
-                countries.add(c);
-            }
-        }
-        catch (SQLException e){
+            countries = buildCountries(resultSet);
+        } catch (SQLException e){
+            e.printStackTrace();
             return null;
         }
+
         return countries;
     }
 
     public List<Country> find10LargestSurfaces(){
-        List<Country> countries = new ArrayList<Country>();
+        List<Country> countries;
         try{
-            PreparedStatement mySt = myConn.prepareStatement("SELECT * FROM public.\"Country\"  ORDER BY surfacearea DESC limit 5; ");
-            ResultSet RS = mySt.executeQuery();
-            Country c = null;
-            while (RS.next()) {
-                System.out.println("Landcode: " + RS.getString("code"));
-                System.out.println("Afkorting: " + RS.getString("iso3"));
-                System.out.println("Landnaam: " + RS.getString("name"));
-                System.out.println("Hoofdstad: " + RS.getString("capital"));
-                System.out.println("Contrinent: " + RS.getString("continent"));
-                System.out.println("Regio: " + RS.getString("region"));
-                System.out.println("Oppervlakte: " + RS.getDouble("surfacearea"));
-                System.out.println("Aantal inwoners: " + RS.getInt("population"));
-                System.out.println("Regering: " + RS.getString("governmentform"));
-                System.out.println("Lat: " + RS.getDouble("latitude"));
-                System.out.println("Lon: " + RS.getDouble("longitude"));
-                System.out.println("\n");
+            PreparedStatement mySt = myConn.prepareStatement("SELECT * FROM country  ORDER BY surfacearea DESC limit 5; ");
+            ResultSet resultSet = mySt.executeQuery();
 
-                c = new Country(
-                        RS.getString("code"),
-                        RS.getString("iso3"),
-                        RS.getString("name"),
-                        RS.getString("capital"),
-                        RS.getString("continent"),
-                        RS.getString("region"),
-                        RS.getDouble("surfacearea"),
-                        RS.getInt("population"),
-                        RS.getString("governmentform"),
-                        RS.getDouble("latitude"),
-                        RS.getDouble("longitude"));
-                countries.add(c);
-            }
-        }
-        catch (SQLException e){
+            countries = buildCountries(resultSet);
+        } catch (SQLException e){
+            e.printStackTrace();
             return null;
         }
+
         return countries;
     }
 
     public boolean update(Country country){
         try {
-            PreparedStatement mySt = myConn.prepareStatement("update public.\"Country\" set values (?,?,?,?,?,?,?)");
+            PreparedStatement mySt = myConn.prepareStatement("update country set values (?,?,?,?,?,?,?)");
             mySt.setString(1, country.getCode());
             mySt.setString(2, country.getName());
             mySt.setString(3, country.getContinent());
@@ -218,7 +138,7 @@ public class CountryPostgresDaoImpl extends PostgresBaseDao implements CountryDa
 
     public boolean delete(Country country){
         try {
-            PreparedStatement mySt = myConn.prepareStatement("delete from public.\"Country\" where ?");
+            PreparedStatement mySt = myConn.prepareStatement("delete from country where ?");
             mySt.setString(1, country.getCode());
             ResultSet RS = mySt.executeQuery();
             while (RS.next()) {

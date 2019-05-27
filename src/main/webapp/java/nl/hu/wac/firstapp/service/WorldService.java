@@ -1,6 +1,8 @@
 package nl.hu.wac.firstapp.service;
 
 import nl.hu.wac.firstapp.domain.Country;
+import nl.hu.wac.firstapp.domain.CountryDao;
+import nl.hu.wac.firstapp.domain.CountryPostgresDaoImpl;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -30,7 +32,8 @@ public class WorldService {
 	}
 	
 	public List<Country> getAllCountries() {
-		return allCountries;
+		CountryDao countryDao = new CountryPostgresDaoImpl();
+		return countryDao.findAll();
 	}
 	
 	public List<Country> get10LargestPopulations() {
