@@ -25,7 +25,7 @@ public class CountryPostgresDaoImpl extends PostgresBaseDao implements CountryDa
             mySt.setInt(6, country.getPopulation());
             mySt.setString(7, country.getGovernment());
             mySt.setString(8, "");
-            mySt.executeLargeUpdate();
+            mySt.executeUpdate();
             return true;
         }
         catch (SQLException e){

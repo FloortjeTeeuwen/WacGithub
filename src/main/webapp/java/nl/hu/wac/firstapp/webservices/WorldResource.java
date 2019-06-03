@@ -139,14 +139,11 @@ public class WorldResource {
                                 @FormParam("Populatie") int pop, @FormParam("Regering") String gov) {
         WorldService service = ServiceProvider.getWorldService();
         Country newCountry = new Country(code, name, con, reg, sur, pop, gov);
-        boolean result = service.save(newCountry);
-        System.out.println(result);
-//        if (service.save(newCountry)) {
-//            return Response.ok().build();
-//        } else {
-//            return Response.status(Response.Status.BAD_REQUEST).build();
-//        }
-        return Response.status(Response.Status.BAD_REQUEST).build();
+        if (service.save(newCountry)) {
+            return Response.ok().build();
+        } else {
+            return Response.status(Response.Status.BAD_REQUEST).build();
+        }
 
 }}
 

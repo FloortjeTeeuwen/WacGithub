@@ -218,7 +218,7 @@ function createCountry(country) {
 
     document.getElementById("AddButton2").addEventListener("click", function (event) {
         event.preventDefault();
-        modal.style.display = "none";
+        modal2.style.display = "none";
 
         var formdata = new FormData (document.querySelector("#addForm"));
         var encData = new URLSearchParams(formdata.entries());
