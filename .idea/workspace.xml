@@ -11,6 +11,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/IP-API.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/IP-API.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/IP-APICSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/IP-APICSS.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/IP-APIJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/IP-APIJS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryPostgresDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryPostgresDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/service/WorldService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/service/WorldService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/WorldResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/WorldResource.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,72 +41,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryPostgresDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-API.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-APIJS.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="1200">
+              <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-APICSS.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-API.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/WorldResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="147">
+              <caret line="148" column="68" lean-forward="true" selection-start-line="148" selection-start-column="68" selection-end-line="148" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/javascriptmachine.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/service/ServiceProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -109,20 +64,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/service/WorldService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+            <state relative-caret-position="189">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/PostgresBaseDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryPostgresDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="258">
+              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-APIJS.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-105">
+              <caret line="214" column="33" lean-forward="true" selection-start-line="214" selection-start-column="33" selection-end-line="214" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -148,6 +109,8 @@
       <find>Countrylist</find>
       <find>loadCount</find>
       <find>console</find>
+      <find>countries</find>
+      <find>AddButton</find>
     </findStrings>
     <replaceStrings>
       <replace>const</replace>
@@ -177,21 +140,21 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/hu/wac/firstapp/servlets/les3/WorldResource.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/nl/hu/wac/firstapp/interfaces/CountryDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/hu/wac/firstapp/DaoImpl/CountryPostgresDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/DaoImpl/PostgresBaseDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/Country.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/interfaces/CountryDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/DaoImpl/CountryPostgresDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/WorldResource.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/Country.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/service/WorldService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryPostgresDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/IP-APIJS.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/IP-API.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/IP-APICSS.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/IP-API.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/IP-APIJS.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryPostgresDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/WorldResource.java" />
       </list>
     </option>
   </component>
@@ -221,10 +184,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="87" />
-    <option name="y" value="56" />
+    <option name="x" value="153" />
+    <option name="y" value="23" />
     <option name="width" value="1352" />
-    <option name="height" value="748" />
+    <option name="height" value="793" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -304,14 +267,6 @@
               <item name="firstapp" type="462c0819:PsiDirectoryNode" />
               <item name="webservices" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="FirstApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -323,7 +278,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558951594295" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559582169120" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -369,6 +324,9 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="IP-API.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8181/restservices/IP-API.html">
+      <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:8181//restservices/index.html">
       <method v="2" />
@@ -491,11 +449,13 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.IP-API.html" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.40" />
       <item itemvalue="Tomcat Server.rekenmachine.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.IP-API.html" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Tomcat Server.rekenmachine.html" />
         <item itemvalue="JavaScript Debug.index.html" />
@@ -536,7 +496,15 @@
       <workItem from="1558522840426" duration="10938000" />
       <workItem from="1558787000394" duration="11114000" />
       <workItem from="1558876190979" duration="454000" />
-      <workItem from="1558940481150" duration="7373000" />
+      <workItem from="1558940481150" duration="8094000" />
+      <workItem from="1559042641954" duration="13972000" />
+      <workItem from="1559126804112" duration="14747000" />
+      <workItem from="1559385613831" duration="158000" />
+      <workItem from="1559387039260" duration="1256000" />
+      <workItem from="1559389318708" duration="1367000" />
+      <workItem from="1559393600998" duration="9782000" />
+      <workItem from="1559546165351" duration="21046000" />
+      <workItem from="1559588509178" duration="1271000" />
     </task>
     <task id="LOCAL-00001" summary="bijna klaar&#10;local storage mist">
       <created>1558529475340</created>
@@ -563,13 +531,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116120000" />
+    <option name="totallyTimeSpent" value="180440000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="87" y="56" width="1352" height="748" extended-state="0" />
-    <editor active="true" />
+    <frame x="153" y="23" width="1352" height="793" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31221375" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18091603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -579,32 +546,32 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.21835174" visible="true" weight="0.08689024" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39942938" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.21835174" visible="true" weight="0.48787448" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3152639" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32952926" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3292683" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.7816483" side_tool="true" weight="0.54921544" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.26676178" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.26533523" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32952926" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3292683" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24893798" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32965165" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32900763" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32965165" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32900763" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32965165" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.022900764" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21197252" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17862596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -614,29 +581,29 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39280576" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.21835174" visible="true" weight="0.48787448" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31566265" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3292683" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.26746988" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.7816483" side_tool="true" weight="0.54921544" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.26533523" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Bean Validation" order="0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3292683" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24893798" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32900763" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32900763" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.022900764" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -688,51 +655,35 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/context.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/DynamicServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/Country.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="9" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascriptmachine.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-APICSS.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/PostgresBaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="-108">
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -746,58 +697,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/service/WorldService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/Country.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+        <state relative-caret-position="375">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryPostgresDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/DynamicServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/WorldResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="-78">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascriptmachine.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-APIJS.js">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.26/jersey-server-2.26.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        <state>
+          <folding>
+            <element signature="e#0#6220#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="151">
+          <caret line="833" selection-start-line="833" selection-end-line="833" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/containers/jersey-container-servlet-core/2.26/jersey-container-servlet-core-2.26.jar!/org/glassfish/jersey/servlet/WebComponent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2864">
+          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.26/jersey-common-2.26.jar!/org/glassfish/jersey/process/internal/RequestScope.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.26/jersey-common-2.26.jar!/org/glassfish/jersey/internal/Errors.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.26/jersey-server-2.26-sources.jar!/org/glassfish/jersey/server/ServerRuntime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="288" selection-start-line="288" selection-end-line="288" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.26/jersey-server-2.26-sources.jar!/org/glassfish/jersey/server/model/ResourceMethodInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="494" selection-start-line="494" selection-end-line="494" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.26/jersey-server-2.26-sources.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="104" column="95" selection-start-line="104" selection-start-column="51" selection-end-line="104" selection-end-column="95" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-API.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        <state relative-caret-position="1200">
+          <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-APICSS.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-APIJS.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+        <state relative-caret-position="-105">
+          <caret line="214" column="33" lean-forward="true" selection-start-line="214" selection-start-column="33" selection-end-line="214" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/service/WorldService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryPostgresDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/WorldResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="148" column="68" lean-forward="true" selection-start-line="148" selection-start-column="68" selection-end-line="148" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

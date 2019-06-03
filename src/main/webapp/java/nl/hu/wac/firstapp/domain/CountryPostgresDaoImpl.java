@@ -13,9 +13,10 @@ public class CountryPostgresDaoImpl extends PostgresBaseDao implements CountryDa
     public CountryPostgresDaoImpl(){
         this.myConn = super.getConnection();
     }
+
     public boolean save(Country country){
         try {
-            PreparedStatement mySt = myConn.prepareStatement("insert into country values (?,?,?,?,?,?,?)");
+            PreparedStatement mySt = myConn.prepareStatement("insert into country (code, name, continent, region, surfacearea, population, governmentform, capital )values (?,?,?,?,?,?,?,?)");
             mySt.setString(1, country.getCode());
             mySt.setString(2, country.getName());
             mySt.setString(3, country.getContinent());
@@ -23,8 +24,9 @@ public class CountryPostgresDaoImpl extends PostgresBaseDao implements CountryDa
             mySt.setDouble(5, country.getSurface());
             mySt.setInt(6, country.getPopulation());
             mySt.setString(7, country.getGovernment());
-            mySt.executeQuery();
-            System.out.println("Land toegevoegd");
+            mySt.setString(8, "");
+            mySt.executeLargeUpdate();
+            return true;
         }
         catch (SQLException e){
             System.out.println("FOUT");
@@ -37,7 +39,7 @@ public class CountryPostgresDaoImpl extends PostgresBaseDao implements CountryDa
         List<Country> countries;
 
         try {
-            PreparedStatement mySt = myConn.prepareStatement("select * from country");
+            PreparedStatement mySt = myConn.prepareStatement("select * from country order by name");
             ResultSet resultSet = mySt.executeQuery();
 
             countries = buildCountries(resultSet);
@@ -117,9 +119,9 @@ public class CountryPostgresDaoImpl extends PostgresBaseDao implements CountryDa
         return countries;
     }
 
-    public boolean update(Country country){
+    public boolean update(Country country, String code){
         try {
-            PreparedStatement mySt = myConn.prepareStatement("update country set values (?,?,?,?,?,?,?)");
+            PreparedStatement mySt = myConn.prepareStatement("update country set code=?, name=?, continent=?, region=?, surfacearea=?, population=?, governmentform=? where code = ?");
             mySt.setString(1, country.getCode());
             mySt.setString(2, country.getName());
             mySt.setString(3, country.getContinent());
@@ -127,18 +129,19 @@ public class CountryPostgresDaoImpl extends PostgresBaseDao implements CountryDa
             mySt.setDouble(5, country.getSurface());
             mySt.setInt(6, country.getPopulation());
             mySt.setString(7, country.getGovernment());
-            mySt.executeQuery();
-            System.out.println("Land geupdate");
+            mySt.setString(8, country.getCode());
+            mySt.executeUpdate();
+            return true;
         }
         catch (SQLException e){
-            System.out.println("FOUT");
+            e.printStackTrace();
         }
         return false;
     }
 
     public boolean delete(Country country){
         try {
-            PreparedStatement mySt = myConn.prepareStatement("delete from country where ?");
+            PreparedStatement mySt = myConn.prepareStatement("delete from country where code = ?");
             mySt.setString(1, country.getCode());
             ResultSet RS = mySt.executeQuery();
             while (RS.next()) {

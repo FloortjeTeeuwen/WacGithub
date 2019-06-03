@@ -31,7 +31,8 @@
         </div>
 
         <div id="vacation">
-            <h3>Beschikbare vakantiebestemmingen</h3>
+            <h3>Beschikbare vakantiebestemmingen
+            <button id="AddButton">Land toevoegen</button></h3>
             <div id="countrytable">
             <table>
                 <thead>
@@ -40,16 +41,82 @@
                     <th>Regio</th>
                     <th>Oppervlakte</th>
                     <th>Inwoners</th>
+                    <th></th>
                 </thead>
                 <tbody id="countries">
-
                 </tbody>
             </table>
             </div>
         </div>
-    </div>
+
+        <!-- The Modal -->
+        <div id="editModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="editForm">
+                <table id=formTable>
+                    <tr><td class="firstColumn"><label>Landcode: </label></td>
+                    <td><input id= "Value1" type="text" name="code" value=""></td></tr>
+
+                    <tr><td><label>Landnaam: </label></td>
+                        <td><input id="Value2" type="text" name="name" value=""></td></tr>
+
+                    <tr><td><label>Continent: </label></td>
+                    <td><input id="Value3" type="text" name="continent" value=""></td></tr>
+
+                    <tr><td><label>Regio: </label></td>
+                    <td><input id="Value4" type="text" name="region" value=""></td></tr>
+
+                    <tr><td><label>Oppervlakte: </label></td>
+                    <td><input id="Value5" type="text" name="surface" value=""></td></tr>
+
+                    <tr><td><label>Populatie: </label></td>
+                    <td><input id="Value6" type="text" name="population" value=""></td></tr>
+
+                    <tr><td><label>Regering: </label></td>
+                    <td><input id="Value7" type="text" name="government" value=""></td></tr>
+                </table>
+                    <input id="submitButton" type="submit" value="Wijzigen">
+                </form>
+            </div>
+
+        </div>
+
+        <div id="createModal" class="modal1">
+            <div class="modal-content1">
+                <span class="close1">&times;</span>
+                <form id="addForm">
+                    <table id=formTable2>
+                        <tr><td class="firstColumn2"><label>Landcode: </label></td>
+                            <td><input id= "C1" type="text" name="Landcode" value=""></td></tr>
+
+                        <tr><td><label>Landnaam: </label></td>
+                            <td><input id="C2" type="text" name="Landnaam" value=""></td></tr>
+
+                        <tr><td><label>Continent: </label></td>
+                            <td><input id="C3" type="text" name="Continent" value=""></td></tr>
+
+                        <tr><td><label>Regio: </label></td>
+                            <td><input id="C4" type="text" name="Regio" value=""></td></tr>
+
+                        <tr><td><label>Oppervlakte: </label></td>
+                            <td><input id="C5" type="text" name="Oppervlakte" value=""></td></tr>
+
+                        <tr><td><label>Populatie: </label></td>
+                            <td><input id="C6" type="text" name="Populatie" value=""></td></tr>
+
+                        <tr><td><label>Regering: </label></td>
+                            <td><input id="C7" type="text" name="Regering" value=""></td></tr>
+                    </table>
+                    <input id="AddButton2" type="submit" value="Toevoegen">
+                </form>
+            </div>
+
+        </div>
 <!-- Hier komen jouw script-tags -->
 <script src="IP-APIJS.js"></script>
-
+</div>
 </body>
 </html>

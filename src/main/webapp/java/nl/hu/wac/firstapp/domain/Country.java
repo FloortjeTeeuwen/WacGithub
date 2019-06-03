@@ -26,6 +26,15 @@ public class Country {
 		this.latitude = lat;
 		this.longitude = lng;
 	}
+	public Country(String code, String name, String con, String reg, double sur, int pop, String gov){
+		this.code = code;
+		this.name = name;
+		this.continent = con;
+		this.region = reg;
+		this.surface = sur;
+		this.population = pop;
+		this.government = gov;
+	}
 	
 	public String getCode() {
 		return code;
