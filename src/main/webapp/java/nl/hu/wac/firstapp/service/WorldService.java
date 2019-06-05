@@ -1,17 +1,18 @@
 package nl.hu.wac.firstapp.service;
 
-import nl.hu.wac.firstapp.domain.Country;
-import nl.hu.wac.firstapp.domain.CountryDao;
-import nl.hu.wac.firstapp.domain.CountryPostgresDaoImpl;
+import nl.hu.wac.firstapp.domain.*;
+
 import java.util.List;
 
 public class WorldService {
 
 	public WorldService() {
 		countrydao = new CountryPostgresDaoImpl();
+		userDao = new UserPostgresDaoImpl();
 
 	}
 	private CountryDao countrydao;
+	private UserDao userDao;
 
 	public List<Country> getAllCountries(){
 		return countrydao.findAll();
@@ -47,4 +48,5 @@ public class WorldService {
 		return countrydao.update(country,code);
 	}
 
+	public String findRoleForUser(String name, String pass){return userDao.findRoleForUser(name, pass);}
 }

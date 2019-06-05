@@ -211,6 +211,10 @@ function editCountry(country) {
     });
 
 }
+const createButton = document.getElementById("AddButton");
+createButton.addEventListener("click", () =>{
+    createCountry(country);
+});
 
 function createCountry(country) {
     console.log("Create", country);
@@ -250,10 +254,7 @@ function createCountry(country) {
     var span = document.getElementsByClassName("close")[0];
     var span2 = document.getElementsByClassName("close1")[0];
 
-var createButton = document.getElementById("AddButton");
-createButton.addEventListener("click", () =>{
-    createCountry(country);
-});
+
 // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
         modal.style.display = "none";
@@ -262,7 +263,6 @@ createButton.addEventListener("click", () =>{
     span2.onclick = function(){
         modal2.style.display = "none";
     };
-
 
 
 // When the user clicks anywhere outside of the modal, close it
@@ -277,6 +277,9 @@ createButton.addEventListener("click", () =>{
             modal2.style.display = "none";
         }
     };
+
+
+
 
 initPage();
 
