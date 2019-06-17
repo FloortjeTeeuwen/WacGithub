@@ -8,31 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d68ad7db-8ddc-4043-8ff5-ed9d63625a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/IP-API.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/IP-API.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/IP-APICSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/IP-APICSS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/IP-APIJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/IP-APIJS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/InlogOpmaak.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/InlogOpmaak.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context-heroku.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/inloggen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/inloggen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/Country.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/CountryPostgresDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/PostgresBaseDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/UserPostgresDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/service/ServiceProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/service/WorldService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/DynamicServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/MySecurityContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/WorldResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascriptmachine.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/javascriptmachine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/login_JS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/mystyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/rekenmachine.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +32,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -67,7 +42,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/webapp/index.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="13" selection-start-line="13" selection-end-line="13" />
@@ -76,25 +51,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/context.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/webapp/mystyle.css">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/mystyle.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
@@ -103,22 +60,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/webapp/login_JS.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login_JS.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/webapp/IP-APIJS.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-APIJS.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/webapp/IP-API.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-API.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/webapp/InlogOpmaak.css">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/InlogOpmaak.css">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -236,8 +193,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="13" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="49" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="793" />
@@ -247,32 +204,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="FirstApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstApp" type="462c0819:PsiDirectoryNode" />
+              <item name="FirstApp 22.37.19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstApp 22.37.19" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FirstApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstApp" type="462c0819:PsiDirectoryNode" />
+              <item name="FirstApp 22.37.19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstApp 22.37.19" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FirstApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstApp" type="462c0819:PsiDirectoryNode" />
+              <item name="FirstApp 22.37.19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstApp 22.37.19" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -284,7 +234,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560803690240" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560805638019" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -298,16 +248,16 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/java/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/java/nl/hu/wac/firstapp/servlets/les4" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/webapp" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java/webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -541,6 +491,7 @@
       <workItem from="1560800973821" duration="794000" />
       <workItem from="1560802364675" duration="266000" />
       <workItem from="1560802861590" duration="589000" />
+      <workItem from="1560804402025" duration="750000" />
     </task>
     <task id="LOCAL-00001" summary="bijna klaar&#10;local storage mist">
       <created>1558529475340</created>
@@ -612,16 +563,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560774603875</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="test voor heroku, of nu de applicatie wel wilt werken">
+      <created>1560804572171</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1560804572171</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226183000" />
+    <option name="totallyTimeSpent" value="226933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="793" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22460657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2274678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -703,7 +662,8 @@
     <MESSAGE value="Login works!" />
     <MESSAGE value="Heroku instellen" />
     <MESSAGE value="&#10;heroku werkt" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;heroku werkt" />
+    <MESSAGE value="test voor heroku, of nu de applicatie wel wilt werken" />
+    <option name="LAST_COMMIT_MESSAGE" value="test voor heroku, of nu de applicatie wel wilt werken" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -769,14 +729,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webapp/javascriptmachine.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascriptmachine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/User.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/domain/UserDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/webapp/IP-APICSS.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-APICSS.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
@@ -807,7 +767,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/DynamicServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/MySecurityContext.java" />
-    <entry file="file://$PROJECT_DIR$/src/webapp/inloggen.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/inloggen.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
@@ -819,6 +779,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/java/nl/hu/wac/firstapp/webservices/WorldResource.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context-heroku.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/context.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/WEB-INF/web.xml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -826,50 +788,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webapp/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webapp/mystyle.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/mystyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webapp/login_JS.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login_JS.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webapp/IP-APIJS.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-APIJS.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webapp/IP-API.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/IP-API.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webapp/InlogOpmaak.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/InlogOpmaak.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
         </state>
       </provider>
     </entry>
