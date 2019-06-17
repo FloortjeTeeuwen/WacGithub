@@ -99,7 +99,7 @@ function is10MinutesAgo(date2) {
 }
 
 function loadCountries() {
-    fetch("http://localhost:8181/restservices/countries")
+    fetch("/restservices/countries")
         .then(function (response) {
             return response.json();
         })
@@ -160,7 +160,7 @@ function loadCountries() {
 
 function deleteCountry(country) {
     console.log("DELETE", country);
-    fetch("http://localhost:8181/restservices/countries/"+country.code, { method: 'DELETE' })
+    fetch("/restservices/countries/"+country.code, { method: 'DELETE' })
         .then(function (response) {
             if (response.ok) {
                 alert("Land verwijdert!");
@@ -196,7 +196,7 @@ function editCountry(country) {
 
 
 
-        fetch("http://localhost:8181/restservices/countries/"+country.code, { method: 'PUT', body: encData })
+        fetch("/restservices/countries/"+country.code, { method: 'PUT', body: encData })
             .then(function (response) {
                 if (response.ok) {
                     alert("Land geupdate!");
@@ -227,7 +227,7 @@ function createCountry(country) {
         var formdata = new FormData (document.querySelector("#addForm"));
         var encData = new URLSearchParams(formdata.entries());
 
-        fetch("http://localhost:8181/restservices/countries/newcountry", { method: 'POST', body: encData })
+        fetch("/restservices/countries/newcountry", { method: 'POST', body: encData })
             .then(function (response) {
                 console.log(response);
                 if (response.ok) {
