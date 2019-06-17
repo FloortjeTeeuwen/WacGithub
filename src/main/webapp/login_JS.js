@@ -4,15 +4,15 @@ loginButton.addEventListener("click", () =>{
 });
 
 function login() {
-    var newLocation = "http://localhost:8181/IP-API.html";
+    var newLocation = "/IP-API.html";
     var formData = new FormData(
         document.querySelector("#loginForm"));
     var encData = new URLSearchParams(formData.entries());
 
-    fetch("http://localhost:8181/restservices/authentication", { method: 'POST', body: encData })
+    fetch("/restservices/authentication", { method: 'POST', body: encData })
         .then(function(response) {
             if (response.ok)
-                return window.location.href = "http://localhost:8181/IP-API.html";
+                return window.location.href = "/IP-API.html";
             else alert("Wrong username/password");
         })
 
